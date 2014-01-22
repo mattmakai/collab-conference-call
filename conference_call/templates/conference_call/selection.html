@@ -1,0 +1,35 @@
+{% extends "conference_call/base.html" %}
+
+{% block "content" %}
+
+<div id="content" class="group">
+
+    <h2>Dial a Conference Call</h2>    
+    <br/>
+    <div class="row">
+        <div class="span6">
+            Search for Person by Name<br/>
+            <form method="post" action="{% url 'conference_call:add_participant' %}">
+                {% csrf_token %}
+                <input type="text" maxlength=30 name="name_search" style="height: 22px;"></input>
+                <input type="submit" class="btn"></input>
+            </form>
+        </div>
+        <div class="span6">
+            People to Dial for the Conference<br/>
+            {% if cp %}<ol>{% endif %}
+            {% for c in cp %}
+                <li>{{ c.participant.full_name }}</li>
+            {% empty %}
+                <strong>No one is yet selected for this conference call.</strong>
+            {% endfor %}
+            {% if cp %}
+                </ol>
+                <a href="{% url 'conference_call:dial' %}" class="btn">Dial Conference</a>
+            {% endif %}
+        </div>
+    </div>
+    <br/>
+</div>
+
+{% endblock %}
