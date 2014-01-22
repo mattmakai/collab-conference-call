@@ -15,7 +15,7 @@ Conferencing Calling has different views:
 
 ##Screenshot
 
-![selection page](screenshots/selection.png "Select Participants page")
+![selection page](screenshots/selection.jpg "Select Participants page")
 
 ##Installation
 
