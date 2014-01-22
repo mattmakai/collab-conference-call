@@ -50,7 +50,8 @@ def dial(req):
         # the TWILIO_POSTBACK_URL would be the server hostname
         # plus the exposed /conference-call/postback/ URL
         client.calls.create(to=cp.participant.mobile_phone, 
-            from_="+12029993940", url=settings.TWILIO_POSTBACK_URL)
+            from_=settings.TWILIO_CONF_NUMBER, 
+            url=settings.TWILIO_POSTBACK_URL)
     return render(req, 'conference_call/conference_started.html', {'cc': cc})
 
 
