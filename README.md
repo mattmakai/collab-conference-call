@@ -52,7 +52,8 @@ Once the application is installed, add it to core collab's
 INSTALLED_APPS += ( 'staff_directory', 'conference_call', )
 ```
 
-You'll also need 3 new variables so you can use the Twilio service:
+You'll also need 3 new variables in your local_settings.py so you can use 
+the Twilio service:
 
 ```
 TWILIO_ACCOUNT_SID=''  # account sid from your Twilio user page goes here
