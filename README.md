@@ -8,10 +8,10 @@ and dials every selected participant into a conference call.
 
 ##Pages
 
-Conferencing Calling has different views:
+Conferencing Calling currently only has two different views:
 
 * Select participants
-* Dial page
+* Conference dialed
 
 ##Screenshot
 
