@@ -15,7 +15,16 @@ Conferencing Calling has different views:
 
 ##Screenshot
 
+Simply select "Conference Call" from the Tools menu, or go to 
+/conference-call/.
+
 ![selection page](screenshots/selection.jpg "Select Participants page")
+
+Hit the "Dial Conference" button once you select the people who you want 
+to dial together into a conference. You'll see the success screen below:
+
+![dialed page](screenshots/dial-conference.jpg "Conference dialed page")
+
 
 ##Installation
 
